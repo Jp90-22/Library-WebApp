@@ -62,6 +62,7 @@ namespace Project
             }
 
             app.UseHttpsRedirection();
+            
             app.UseStaticFiles();
 
             app.UseRouting();

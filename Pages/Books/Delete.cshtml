@@ -2,14 +2,13 @@
 @model Project.Pages.Books.DeleteModel
 
 @{
-    ViewData["Title"] = "Delete";
+    ViewData["Title"] = "Borrar";
 }
 
-<h1>Delete</h1>
+<h1>@ViewData["Title"]</h1>
 
-<h3>Are you sure you want to delete this?</h3>
+<h3>¿Seguro que quieres borrar este libro?</h3>
 <div>
-    <h4>Book</h4>
     <hr />
     <dl class="row">
         <dt class="col-sm-2">
@@ -46,7 +45,7 @@
     
     <form method="post">
         <input type="hidden" asp-for="Book.ID" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-page="./Index">Back to List</a>
+        <input type="submit" value="Borrar" class="btn btn-danger" /> |
+        <a asp-page="./Index">Volver a la lista</a>
     </form>
 </div>
