@@ -8,21 +8,42 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.EntityFrameworkCore;
 
 namespace Project
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup(IConfiguration configuration, IWebHostEnvironment env)
         {
+            Environment = env;
             Configuration = configuration;
         }
 
         public IConfiguration Configuration { get; }
+        public IWebHostEnvironment Environment {get;}
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            if(Environment.IsProduction()) 
+            {
+            services.AddDbContext<RazorPagesBookContext>(options =>
+                    options.UseSqlServer(Configuration
+                    .GetConnectionString("RazorPagesBookContext")));
+            }
+            else
+            {
+                // services.AddDbContext<RazorPagesBookContext>(options => 
+                //         options.UseSqlite(Configuration
+                //         .GetConnectionString("BookContext")));
+
+                //I'm just using sql server
+                services.AddDbContext<RazorPagesBookContext>(options =>
+                    options.UseSqlServer(Configuration
+                    .GetConnectionString("RazorPagesBookContext")));
+            }
+
             services.AddRazorPages();
         }
 
