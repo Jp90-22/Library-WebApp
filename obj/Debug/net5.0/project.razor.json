@@ -15624,8 +15624,23 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Xiara Paulino\\Desktop\\Project\\Pages\\Books\\Index.cshtml",
+      "TargetPath": "Pages\\Books\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Xiara Paulino\\Desktop\\Project\\Pages\\Privacy.cshtml",
       "TargetPath": "Pages\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Xiara Paulino\\Desktop\\Project\\Pages\\Books\\Edit.cshtml",
+      "TargetPath": "Pages\\Books\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Xiara Paulino\\Desktop\\Project\\Pages\\Books\\Details.cshtml",
+      "TargetPath": "Pages\\Books\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15641,6 +15656,16 @@
     {
       "FilePath": "c:\\Users\\Xiara Paulino\\Desktop\\Project\\Pages\\Index.cshtml",
       "TargetPath": "Pages\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Xiara Paulino\\Desktop\\Project\\Pages\\Books\\Create.cshtml",
+      "TargetPath": "Pages\\Books\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Xiara Paulino\\Desktop\\Project\\Pages\\Books\\Delete.cshtml",
+      "TargetPath": "Pages\\Books\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
