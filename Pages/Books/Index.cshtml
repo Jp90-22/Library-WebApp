@@ -5,20 +5,20 @@
     ViewData["Title"] = "Lista de libros";
 }
 
-<h1>@ViewData["Title"]</h1>
+<h1 class="my-5 pb-3">@ViewData["Title"]</h1>
 
-<p>
-    <a asp-page="Create">Crear nuevo</a>
-</p>
-
-<form>
+<form class="mb-3">
     <p>Titulo del libro: <input type="text" asp-for = "TitleSearch">
         <input type="submit" value="Buscar">
     </p>
 </form>
 
+<p class="float-right w-auto">
+    <a asp-page="Create">Crear nuevo</a>
+</p>
+
 <table class="table">
-    <thead>
+    <thead class="bg-info">
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Book[0].Title)

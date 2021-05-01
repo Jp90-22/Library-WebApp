@@ -16,7 +16,7 @@ namespace Project.Models
         [DataType(DataType.Date), Display(Name = "Fecha de lanzamiento")]
         public DateTime RelaseDate {get; set;}
 
-        [DataType(DataType.Currency), Range(0.25, 100.00), Column(TypeName = "decimal(18,2)"), Display(Name = "Precio(Dolares)")]
+        [DataType(DataType.Currency), Range(0.25, 100.00), Column(TypeName = "decimal(18,2)"), Display(Name = "Precio (Dolares)")]
         public decimal Price {get; set;}
 
         [MaxLength(40), Display(Name = "Genero")]
