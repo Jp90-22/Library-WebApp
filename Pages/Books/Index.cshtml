@@ -17,7 +17,7 @@
     <a class="btn btn-primary" asp-page="Create">Crear nuevo</a>
 </p>
 
-<table class="table">
+<table class="table sticky-header">
     <thead class="bg-info shadow">
         <tr>
             <th>
@@ -60,10 +60,10 @@
                 <a aria-label="Editar celda" class="btn btn-outline-primary btn-sm my-1" asp-page="./Edit" asp-route-id="@item.ID">
                     <i aria-hidden="false" class="fas fa-edit"></i>
                 </a>
-                <a aria-label="Detalles de la celda" class="btn btn-outline-primary btn-sm my-1" asp-page="./Details" asp-route-id="@item.ID">
+                <a aria-label="Detalles de la celda" class="btn btn-outline-info btn-sm my-1" asp-page="./Details" asp-route-id="@item.ID">
                     <i class="fas fa-info-circle"></i>
                 </a>
-                <a aria-label="Eliminar celda" class="btn btn-outline-primary btn-sm my-1" asp-page="./Delete" asp-route-id="@item.ID">
+                <a aria-label="Eliminar celda" class="btn btn-outline-danger btn-sm my-1" asp-page="./Delete" asp-route-id="@item.ID">
                     <i class="fas fa-trash-alt"></i>
                 </a>
             </td>
